@@ -57,6 +57,7 @@ body {
 	padding-top: 15px;
 }
 .intro {
+	width: 60px;
 	padding-left: 5px;
 	font-size: .9em;
 	position: relative;
@@ -101,6 +102,7 @@ body {
 }
 .about a:focus {
 	text-decoration: underline;
+	outline: none;
 }
 
 
@@ -109,11 +111,11 @@ body {
 	margin: 60px auto;
 	text-align: center;
 }
-i {
+.iconlinks a {
 	color: white;
 	transition-duration: 200ms;
 }
-i:hover {
+.iconlinks a:hover {
 	color: #000;
 	text-shadow:
 	 2px 2px 0 #FFF,
@@ -123,5 +125,13 @@ i:hover {
        2px 2px 0 #FFF;
 }
 
-
-
+.iconlinks a:focus {
+	outline: none;
+		color: #000;
+	text-shadow:
+	 2px 2px 0 #FFF,
+     -2px -2px 0 #FFF,  
+      2px -2px 0 #FFF,
+      -2px 2px 0 #FFF,
+       2px 2px 0 #FFF;
+}
