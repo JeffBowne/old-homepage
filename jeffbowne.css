@@ -188,8 +188,12 @@ body {
 }
 @keyframes fadein {
 	0% {opacity: 1;}
-	50% {opacity: 0;}
+	60% {opacity: 0;}
+	70% {opacity: 1;}
+	80% {opacity: 1;}
+	90% {opacity: .5;}
 	100% {opacity: 1;}
+}
 }
 
 .headline {
@@ -227,6 +231,16 @@ body {
       -1px 1px 0 #000,
        1px 1px 0 #000;
 */
+	animation-name: flash;
+	animation-delay: 2s;
+    animation-duration: .5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+@keyframes flash {
+0% {text-shadow: 0 0 0px #FFF;}
+50% {text-shadow: 0 0 15px #FFF;}
+100% {text-shadow: 0 0 0px #FFF;}
 }
 
 
