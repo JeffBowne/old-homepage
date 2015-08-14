@@ -30,23 +30,35 @@ body {
   width: 100%;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
 
 
+/*  ----------------------------------------  Desktop  ----------------------------------------  */
 
+/*  ----------------------------------------  Desktop  ----------------------------------------  */
+@media (min-width: 650.0001px) {
+/*  ----------------------------------------  Desktop  ----------------------------------------  */
 
+/*  ----------------------------------------  Desktop  ----------------------------------------  */
 .content {
 	width: 95%;
 	margin: -10px auto;
 	border-left: solid black 1px;
-	opacity: 0;
+	opacity: 1;
 	animation-name: fadein;
-	animation-delay: 0s;
-    animation-duration: 2s;
+	animation-delay: 1s;
+    animation-duration: 1s;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
 }
 @keyframes fadein {
-	0% {opacity: 0;}
+	0% {opacity: 1;}
+	60% {opacity: 0;}
+	70% {opacity: 1;}
+	80% {opacity: 1;}
+	90% {opacity: .5;}
 	100% {opacity: 1;}
 }
 
@@ -65,11 +77,11 @@ body {
 	animation-delay: 1s;
     animation-duration: 200s;
 	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
 }
 @keyframes drift {
   0% {left: 0%;}
-  50% {left: 90%;}
-  100% {left: 0%;}
+  100% {left: 80%;}
 }
 
 .name {
@@ -83,13 +95,25 @@ body {
       -1px 1px 0 #000,
        1px 1px 0 #000;
 */
+	animation-name: flash;
+	animation-delay: 2s;
+    animation-duration: .5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
 }
+@keyframes flash {
+0% {text-shadow: 0 0 0px #FFF;}
+50% {text-shadow: 0 0 15px #FFF;}
+100% {text-shadow: 0 0 0px #FFF;}
+}
+
+
 
 .about {
 	width: 800px;
-	max-width: 80%;
+	max-width: 70%;
 	font-size: 1em;
-	margin-left: 50px;
+	margin-left: 30px;
 	border-left: solid white 4px;
 	padding: 10px 5px 10px 5px;
 }
@@ -107,8 +131,8 @@ body {
 
 
 .iconlinks {
-	width: 90%;
-	margin: 60px auto;
+	width: 98%;
+	margin: 100px auto 0 auto;
 	text-align: center;
 }
 .iconlinks a {
@@ -134,4 +158,134 @@ body {
       2px -2px 0 #FFF,
       -2px 2px 0 #FFF,
        2px 2px 0 #FFF;
+}
+
+}
+
+
+.limit {
+	display: inline-block;
+	padding: 0 100px 0 100px;
+}
+
+/*  ----------------------------------------  Mobile  ----------------------------------------  */
+
+/*  ----------------------------------------  Mobile  ----------------------------------------  */
+@media (max-width: 650px) {
+/*  ----------------------------------------  Mobile  ----------------------------------------  */
+
+/*  ----------------------------------------  Mobile  ----------------------------------------  */
+.content {
+	width: 95%;
+	margin: -10px auto;
+	border-left: solid black 1px;
+	opacity: 1;
+	animation-name: fadein;
+	animation-delay: 1s;
+    animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.headline {
+	display: inline-block;
+	margin: 100px 0 60px 0;
+	border-top: solid white 4px;
+	padding-top: 15px;
+}
+.intro {
+	width: 60px;
+	padding-left: 5px;
+	font-size: .9em;
+	position: relative;
+	animation-name: drift;
+	animation-delay: 1s;
+    animation-duration: 150s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes drift {
+  0% {left: 0%;}
+  100% {left: 80%;}
+  
+}
+
+.name {
+	text-align: center;
+	font-size: 12vw;
+	letter-spacing: 3px;
+	padding-left: 10px;
+/*	text-shadow:
+	 0px 0px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+*/
+}
+
+
+.about {
+	width: 70%;
+	font-size: 1em;
+	margin: 0 auto;
+	border-left: solid white 4px;
+	padding: 10px 5px 10px 5px;
+}
+.about a {
+	color: white;
+	text-decoration: none;
+}
+.about a:hover {
+	text-decoration: underline;
+}
+.about a:focus {
+	text-decoration: underline;
+	outline: none;
+}
+
+
+.iconlinks {
+	width: 98%;
+	margin: 60px auto 10px auto;
+	text-align: center;
+}
+.iconlinks a {
+	font-size: 3vw;
+	color: white;
+	transition-duration: 200ms;
+}
+.iconlinks a:hover {
+	color: #000;
+	text-shadow:
+	 2px 2px 0 #FFF,
+     -2px -2px 0 #FFF,  
+      2px -2px 0 #FFF,
+      -2px 2px 0 #FFF,
+       2px 2px 0 #FFF;
+}
+
+.iconlinks a:focus {
+	outline: none;
+		color: #000;
+	text-shadow:
+	 2px 2px 0 #FFF,
+     -2px -2px 0 #FFF,  
+      2px -2px 0 #FFF,
+      -2px 2px 0 #FFF,
+       2px 2px 0 #FFF;
+}
+
+
+.limit {
+	display: inline-block;
+	padding: 0 80px 0 80px;
+}
+
+
 }
