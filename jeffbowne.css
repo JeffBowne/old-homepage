@@ -47,11 +47,11 @@ body {
 	margin: -10px auto;
 	border-left: solid black 1px;
 	opacity: 1;
-	animation-name: fadein;
+/*	animation-name: fadein;
 	animation-delay: 1s;
     animation-duration: 1s;
 	animation-timing-function: ease-in;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards;*/
 }
 @keyframes fadein {
 	0% {opacity: 1;}
@@ -96,8 +96,8 @@ body {
        1px 1px 0 #000;
 */
 	animation-name: flash;
-	animation-delay: 2s;
-    animation-duration: .5s;
+	animation-delay: 1s;
+    animation-duration: 1s;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
 }
