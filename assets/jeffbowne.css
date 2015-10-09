@@ -283,53 +283,60 @@ body {
 
 
 .barres {
-	height: 300px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #E2B000 4px;
 	margin-left: 0;
+	text-align: center;
+	color: #E2B000;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .bardes {
-	height: 300px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #FB5C43 4px;
 	margin-left: 0;
 	margin-top: 150px;
+	text-align: center;
+	color: #FB5C43;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .barani {
-	height: 300px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #75B391 4px;
 	margin-left: 0;
 	margin-top: 150px;
+	text-align: center;
+	color: #75B391;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .barcon {
-	height: 300px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #9E8DA7 4px;
 	margin-left: 0;
 	margin-top: 150px;
+	text-align: center;
+	color: #9E8DA7;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .barfoot {
 	height: 200px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	margin-left: 0;
 	margin-top: 150px;
@@ -646,52 +653,62 @@ body {
 }
 
 
-
-
-
 .barres {
-
-	height: 300px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #E2B000 4px;
 	margin-left: 0;
+	text-align: center;
+	color: #E2B000;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .bardes {
-
-	height: 300px;
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #FB5C43 4px;
 	margin-left: 0;
 	margin-top: 150px;
+	text-align: center;
+	color: #FB5C43;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-.barcon {
-
-	height: 300px;
+.barani {
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #75B391 4px;
 	margin-left: 0;
 	margin-top: 150px;
+	text-align: center;
+	color: #75B391;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-.barmur {
-
-	height: 300px;
+.barcon {
 	background-color: black;
 	width: 100%;
-	letter-spacing: 2px;
 	border-top: solid white 4px;
 	border-bottom: solid #9E8DA7 4px;
+	margin-left: 0;
+	margin-top: 150px;
+	text-align: center;
+	color: #9E8DA7;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.barfoot {
+	height: 200px;
+	background-color: black;
+	width: 100%;
+	border-top: solid white 4px;
 	margin-left: 0;
 	margin-top: 150px;
 }
