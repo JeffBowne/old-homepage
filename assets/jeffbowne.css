@@ -41,83 +41,92 @@ body {
 .title {
 	float: left;
 	height: 27px;
-	width: 55px; 
-	font-size: 11px;
-	padding-left: 7px;
 	margin-top: -3px;
-	margin-left: 8px;
-	/*border-right: solid white 3px;*/
-	transition-duration: 200ms;
+	margin-left: 15px;
+	margin-right: 15px;
+	/*transition-duration: 900ms;*/
 }
-.title:hover {
-	color: #384762;
+.title a {
+	font-size: 11px;
+	color: white;
+	transition-duration: 3000ms;
 }
-.titile:focus {
-	outline: none;
-	color: #384762;
+.title a:hover {
+	transition-duration: 300ms;
 }
-
+.activetitle {
+	text-shadow:
+     -2px -2px 15px #FFF,  
+      2px -2px 15px #FFF,
+      -2px 2px 15px #FFF,
+       2px 2px 15px #FFF;
+}
 
 .nav {
 	font-size: 20px;
 	color: white;
 	text-align: center;
 	float: left;
-	height: 35px;
 	width: 120px; 
-	transition-duration: 200ms;
+	transition-duration: 3000ms;
 }
-.nav div {
-	margin-top: 11px;
-}
-
-
-.navres:hover { 
-	background-color: #E2B000;
-}
-.navres:focus { 
-	outline: none;
-	background-color: #E2B000;
-}
-.navdes:hover { 
-	background-color: #FB5C43;
-}
-.navdes:focus { 
-	outline: none;
-	background-color: #FB5C43;
-}
-.navani:hover { 
-	background-color: #75B391;
-}
-.navani:focus { 
-	outline: none;
-	background-color: #75B391;
-}
-.navcon:hover { 
-	background-color: #9E8DA7;
-}
-.navcon:focus { 
-	outline: none;
-	background-color: #9E8DA7;
+.nav a {
+	padding-top: 11px;
+	/*padding-bottom: 11px;*/
+	display: inline-block;
+	text-decoration: none;
+	transition-duration: 3000ms;
 }
 
+.nav a:hover {
+	transition-duration: 300ms;
+}
+
+.white {
+	color: white;
+}
+.hovres {
+	color: #E2B000;
+	text-shadow: 0 -2px 1px #000;
+}
+.hovart {
+	color: #FB5C43;
+	text-shadow: 0 -2px 1px #000;
+}
+.hovdes {
+	color: #75B391;
+	text-shadow: 0 -2px 1px #000;
+}
+.hovcon {
+	color: #9E8DA7;
+	text-shadow: 0 -2px 1px #000;
+}
 
 .activeres {
-	background-color: #E2B000
+	background-color: #E2B000;padding-bottom: 11px;
+	transition-duration: 300ms;
+}
+.activeart {
+	background-color: #FB5C43;padding-bottom: 11px;
+	transition-duration: 300ms;
 }
 .activedes {
-	background-color: #FB5C43;
-}
-.activeani {
-	background-color: #75B391;
+	background-color: #75B391;padding-bottom: 11px;
+	transition-duration: 300ms;
 }
 .activecon {
-	background-color: #9E8DA7;
+	background-color: #9E8DA7;padding-bottom: 11px;
+	transition-duration: 300ms;
 }
 
 .navnot {
 	background-color: rgba(1, 1, 1, 0);
 }
+
+
+
+
+
 
 
 
@@ -145,7 +154,7 @@ body {
 .content {
 	width: 95%;
 	margin: -10px auto;
-	border-left: solid black 1px;
+	border-left: solid white 1px;
 	opacity: 1;
 /*	animation-name: fadein;
 	animation-delay: 1s;
@@ -222,7 +231,7 @@ body {
 
 .about {
 	float: left;
-	width: 600px;
+	width: 700px;
 	max-width: 60%;
 	font-size: 1em;
 	margin-left: 30px;
@@ -257,22 +266,22 @@ body {
 .iconlinks a:hover {
 	color: #000;
 	text-shadow:
-	 2px 2px 0 #FFF,
-     -2px -2px 0 #FFF,  
-      2px -2px 0 #FFF,
-      -2px 2px 0 #FFF,
-       2px 2px 0 #FFF;
+	2px 2px 0 #FFF,
+	-2px -2px 0 #FFF,  
+	2px -2px 0 #FFF,
+	-2px 2px 0 #FFF,
+	2px 2px 0 #FFF;
 }
 
 .iconlinks a:focus {
 	outline: none;
 		color: #000;
 	text-shadow:
-	 2px 2px 0 #FFF,
-     -2px -2px 0 #FFF,  
-      2px -2px 0 #FFF,
-      -2px 2px 0 #FFF,
-       2px 2px 0 #FFF;
+	2px 2px 0 #FFF,
+	-2px -2px 0 #FFF,  
+	2px -2px 0 #FFF,
+	-2px 2px 0 #FFF,
+	2px 2px 0 #FFF;
 }
 
 .limit {
@@ -294,7 +303,7 @@ body {
 	padding-bottom: 100px;
 }
 
-.bardes {
+.barart {
 	background-color: black;
 	width: 100%;
 	border-top: solid white 4px;
@@ -307,7 +316,7 @@ body {
 	padding-bottom: 100px;
 }
 
-.barani {
+.bardes {
 	background-color: black;
 	width: 100%;
 	border-top: solid white 4px;
@@ -343,6 +352,13 @@ body {
 }
 
 
+
+
+
+
+#resume {
+	margin-top: 32px;
+}
 
 .resumeC {
 	width: 80%;
@@ -432,9 +448,11 @@ body {
 
 
 
+#artwork {
+	margin-top: 32px;
+}
 
-
-.designsC { 
+.artworkC { 
 	height: 1000px;
 	width: 80%;
 	margin: 80px auto;
@@ -442,7 +460,7 @@ body {
 	/*border-right: solid black 1px;*/
 }
 
-.designsC h1 {
+.artworkC h1 {
 	text-align: center;
 	font-size: 2em;
 	font-weight: normal;
@@ -453,12 +471,18 @@ body {
 }
 
 
-.animalsC {
+
+
+#design {
+	margin-top: 32px;
+}
+
+.designC {
 	height: 1000px;
 	margin: 80px auto;
 }
 
-.animalsC h1 {
+.designC h1 {
 	text-align: center;
 	font-size: 2em;
 	font-weight: normal;
@@ -466,6 +490,12 @@ body {
 	color: #75B391;
 	padding: 40px 0 10px 0;
 	margin: 0;
+}
+
+
+
+#contact {
+	margin-top: 32px;
 }
 
 .contactC {
@@ -628,22 +658,22 @@ body {
 .iconlinks a:hover {
 	color: #000;
 	text-shadow:
-	 2px 2px 0 #FFF,
-     -2px -2px 0 #FFF,  
-      2px -2px 0 #FFF,
-      -2px 2px 0 #FFF,
-       2px 2px 0 #FFF;
+	2px 2px 0 #FFF,
+	-2px -2px 0 #FFF,  
+	2px -2px 0 #FFF,
+	-2px 2px 0 #FFF,
+	2px 2px 0 #FFF;
 }
 
 .iconlinks a:focus {
 	outline: none;
 		color: #000;
 	text-shadow:
-	 2px 2px 0 #FFF,
-     -2px -2px 0 #FFF,  
-      2px -2px 0 #FFF,
-      -2px 2px 0 #FFF,
-       2px 2px 0 #FFF;
+	2px 2px 0 #FFF,
+	-2px -2px 0 #FFF,  
+	2px -2px 0 #FFF,
+	-2px 2px 0 #FFF,
+	2px 2px 0 #FFF;
 }
 
 
@@ -665,7 +695,7 @@ body {
 	padding-bottom: 100px;
 }
 
-.bardes {
+.barart {
 	background-color: black;
 	width: 100%;
 	border-top: solid white 4px;
@@ -678,7 +708,7 @@ body {
 	padding-bottom: 100px;
 }
 
-.barani {
+.bardes {
 	background-color: black;
 	width: 100%;
 	border-top: solid white 4px;

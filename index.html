@@ -11,17 +11,17 @@
 		<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
 		<link rel="icon" href="http://www.jeffbowne.com/favicon.ico">
 	</head>
-	<body>
+	<body id='top'>
 		<div class="bg">
 			<img src="assets/ocomps.jpg" alt="Components">
 		</div>
 
 		<div id='topbar'>
-			<div class='title'><i class="fa fa-code fa-3x"></i></div>
-			<div id='gtresume' class='nav navres'><div>RESUME</div></div>
-			<div id='gtdesigns' class='nav navdes'><div>DESIGNS</div></div>
-			<div id='gtanimals' class='nav navani'><div>ANIMALS</div></div>
-			<div id='gtcontact' class='nav navcon'><div>CONTACT</div></div>
+			<div class='title'><a href="#top"><i class="fa fa-code fa-3x"></i></a></div>
+			<div id='gtresume' class='nav'><a class='white' href="#resume">RESUME</a></div>
+			<div id='gtartwork' class='nav'><a class='white' href="#artwork">ARTWORK</a></div>
+			<div id='gtdesign' class='nav'><a class='white' href="#design">DESIGN</a></div>
+			<div id='gtcontact' class='nav'><a class='white' href="#contact">CONTACT</a></div>
 		</div>
 
 
@@ -39,6 +39,7 @@
 				<div class='about'>
 					I'm a full-stack web developer / sofware engineer with a knack for design. I work, play, and code in Philly&mdash;where I've lived my whole life. I also build custom effects pedals for my small side business <a href="https://www.facebook.com/sixtyfortycustompedals">Sixty/Forty Custom Pedals</a> and play guitar/sing in my noise-rock band <a href="http://www.fakingband.com">FAKING</a>.
 					<br>My favorite sports are playing guitar, drinking craft beer, and watching horror movies. 
+					<br><br>I built this website with HTML, CSS, and jQuery without the use of frameworks.
 				</div>
 			</div>
 			
@@ -50,7 +51,7 @@
 		</div>
 
 
-<div class='resume'>
+<div id='resume'>
 <div class='barres'>
 	<i class="fa fa-code fa-3x"></i>
 </div>
@@ -146,27 +147,27 @@
 </div>
 
 
-<div class='designs'>
+<div id='artwork'>
+<div class='barart'>
+	<i class="fa fa-code fa-3x"></i>
+</div>
+		<div class='artworkC'>
+			<h1><span class='nowrap'>GRAPHIC</span> <span class='nowrap'>ARTWORK</span></h1>
+		</div>
+</div>
+
+
+<div id='design'>
 <div class='bardes'>
 	<i class="fa fa-code fa-3x"></i>
 </div>
-		<div class='designsC'>
-			<h1><span class='nowrap'>FRONT END</span> <span class='nowrap'>WEB DESIGNS</span></h1>
+		<div class='designC'>
+			<h1><span class='nowrap'>FRONT END</span> <span class='nowrap'>WEB DESIGN</span></h1>
 		</div>
 </div>
 
 
-<div class='animals'>
-<div class='barani'>
-	<i class="fa fa-code fa-3x"></i>
-</div>
-		<div class='animalsC'>
-			<h1><span class='nowrap'>FOSTER</span> <span class='nowrap'>ANIMALS</span></h1>
-		</div>
-</div>
-
-
-<div class='contact'>
+<div id='contact'>
 <div class='barcon'>
 	<i class="fa fa-code fa-3x"></i>
 </div>

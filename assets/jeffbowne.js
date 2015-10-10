@@ -1,166 +1,102 @@
 $(document).ready(function() {
 
 
-$(".title").click(function() {
-    $('html,body').animate({
-        scrollTop: $("body").offset().top},
-        'slow');
-});
+  $(".title a").hover(function() { 
+    $(".title a").addClass("activetitle");
+  }, function() {
+    $(".title a").removeClass("activetitle");
+  });
 
+  $("#gtresume a").hover(function() {
+    $("#gtresume a").addClass("hovres");
+  }, function() {
+    $("#gtresume a").removeClass("hovres");
+  });
 
-$("#gtresume").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".resume").offset().top},
-        'slow');
+  $("#gtartwork a").hover(function() {
+    $("#gtartwork a").addClass("hovart");
+  }, function() {
+    $("#gtartwork a").removeClass("hovart");
+  });
 
-    $('#topbar div').each(function () {
-            $(this).removeClass('activeres');
-            $(this).removeClass('activedes');
-            $(this).removeClass('activeani');
-            $(this).removeClass('activecon');
-        })
-        $(this).addClass('activeres');
-});
+  $("#gtdesign a").hover(function() {
+    $("#gtdesign a").addClass("hovdes");
+  }, function() {
+    $("#gtdesign a").removeClass("hovdes"); 
+  });
 
-
-$("#gtdesigns").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".bardes").offset().top},
-        'slow');
-
-    $('#topbar div').each(function () {
-            $(this).removeClass('activeres');
-            $(this).removeClass('activedes');
-            $(this).removeClass('activeani');
-            $(this).removeClass('activecon');        
-        })
-        $(this).addClass('activedes');
-});
-
-
-$("#gtanimals").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".barani").offset().top},
-        'slow');
-
-    $('#topbar div').each(function () {
-            $(this).removeClass('activeres');
-            $(this).removeClass('activedes');
-            $(this).removeClass('activeani');
-            $(this).removeClass('activecon');        
-        })
-        $(this).addClass('activeani');
-});
-
-
-$("#gtcontact").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".barcon").offset().top},
-        'slow');
-
-    $('#topbar div').each(function () {
-            $(this).removeClass('activeres');
-            $(this).removeClass('activedes');
-            $(this).removeClass('activeani');
-            $(this).removeClass('activecon');        
-        })
-        $(this).addClass('activecon');
-});
+  $("#gtcontact a").hover(function() {
+    $("#gtcontact a").addClass("hovcon");
+  }, function() {
+    $("#gtcontact a").removeClass("hovcon");
+  });
 
 
 
+  $(".title a").click(function(event) {
+    event.preventDefault();
+    $("html,body").animate({scrollTop: $("#top").offset().top}, 'slow');
+  });
+
+  $("#gtresume a").click(function(event) {
+    event.preventDefault();
+    $("html,body").animate({scrollTop: $("#resume").offset().top}, 'slow');
+  });
+
+  $("#gtartwork a").click(function(event) {
+    event.preventDefault();
+    $("html,body").animate({scrollTop: $("#artwork").offset().top}, 'slow');
+  });
+
+  $("#gtdesign a").click(function(event) {
+    event.preventDefault();
+    $("html,body").animate({scrollTop: $("#design").offset().top}, 'slow');
+  });
+
+  $("#gtcontact a").click(function(event) {
+    event.preventDefault();
+    $("html,body").animate({scrollTop: $("#contact").offset().top}, 'slow');
+  });
 
 
 
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#resume").position().top <= sPos && $("#resume").position().top + $("#resume").height()+114 > sPos) {
+      $("#gtresume").addClass("activeres");
+    } else {
+      $("#gtresume").removeClass("activeres");
+    }
+  });
 
 
-    // $('a[href^="#"]').on('click', function (e) {
-    //     e.preventDefault();
-    //     $(document).off("scroll");
-        
-    //     $('a').each(function () {
-    //         $(this).removeClass('active');
-    //     })
-    //     $(this).addClass('active');
-      
-    //     var target = this.hash,
-    //         menu = target;
-    //     $target = $(target);
-    //     $('html, body').stop().animate({
-    //         'scrollTop': $target.offset().top+2
-    //     }, 500, 'swing', function () {
-    //         window.location.hash = target;
-    //         $(document).on("scroll", onScroll);
-    //     });
-    // });
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#artwork").position().top <= sPos && $("#artwork").position().top + $("#artwork").height()+114 > sPos) {
+      $("#gtartwork").addClass('activeart');
+    } else {
+      $("#gtartwork").removeClass("activeart");
+    }
+  });
 
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#design").position().top <= sPos && $("#design").position().top + $("#design").height()+114 > sPos) {
+      $("#gtdesign").addClass('activedes');
+    } else {
+      $("#gtdesign").removeClass("activedes");
+    }
+  });
 
-
-
-
-
-
-
-
-$(window).scroll(function() { 
-  var scrollPos = $(window).scrollTop();
-         if ($(".resume").position().top <= scrollPos && $(".resume").position().top + $(".resume").height()+110 > scrollPos) {
-    $("#gtresume").addClass('activeres');
-} else {
-$("#gtresume").removeClass( "activeres" );
-}
-});
-
-
-$(window).scroll(function() { 
-  var scrollPos = $(window).scrollTop();
-         if ($(".designs").position().top <= scrollPos && $(".designs").position().top + $(".designs").height()+110 > scrollPos) {
-    $("#gtdesigns").addClass('activedes');
-} else {
-$("#gtdesigns").removeClass( "activedes" );
-}
-});
-
-$(window).scroll(function() { 
-  var scrollPos = $(window).scrollTop();
-         if ($(".animals").position().top <= scrollPos && $(".animals").position().top + $(".animals").height()+110 > scrollPos) {
-    $("#gtanimals").addClass('activeani');
-} else {
-$("#gtanimals").removeClass( "activeani" );
-}
-});
-
-$(window).scroll(function() { 
-  var scrollPos = $(window).scrollTop();
-         if ($(".contact").position().top <= scrollPos && $(".contact").position().top + $(".contact").height()+110 > scrollPos) {
-    $("#gtcontact").addClass('activecon');
-} else {
-$("#gtcontact").removeClass( "activecon" );
-}
-});
-
-
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#contact").position().top <= sPos && $("#contact").position().top + $("#contact").height()+114 > sPos) {
+      $("#gtcontact").addClass('activecon');
+    } else {
+      $("#gtcontact").removeClass("activecon");
+    }
+  });
 
 
 
 });
-
-
-
-
-
-// function onScroll(event){
-//       var scrollPos = $(window).scrollTop();
-      
-//         if ($(".resume").position().top <= scrollPos && $(".resume").position().top + $(".resume").height() > scrollPos) {
-            
-//             $('#gtresume').addClass("activeres");
-//         }
-//         else{
-//             $('#gtresume').removeClass("activeres");
-//         }
-    
-// }
-
-
-
