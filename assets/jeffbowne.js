@@ -99,4 +99,48 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#resume").position().top+248 <= sPos && $("#resume").position().top + $("#resume").height()+144 > sPos) {
+      $("#topbar").addClass("yline");
+    } else {
+      $("#topbar").removeClass("yline");
+    }
+  });
+
+
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#artwork").position().top+248 <= sPos && $("#artwork").position().top + $("#artwork").height()+144 > sPos) {
+      $("#topbar").addClass('rline');
+    } else {
+      $("#topbar").removeClass("rline");
+    }
+  });
+
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#design").position().top+248 <= sPos && $("#design").position().top + $("#design").height()+144 > sPos) {
+      $("#topbar").addClass('gline');
+    } else {
+      $("#topbar").removeClass("gline");
+    }
+  });
+
+  $(window).scroll(function() { 
+    var sPos = $(window).scrollTop();
+    if ($("#contact").position().top+248 <= sPos && $("#contact").position().top + $("#contact").height()+144 > sPos) {
+      $("#topbar").addClass('pline');
+    } else {
+      $("#topbar").removeClass("pline");
+    }
+  });
+
+
+
 });
