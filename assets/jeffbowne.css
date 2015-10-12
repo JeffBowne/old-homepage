@@ -174,7 +174,7 @@ body {
 	animation-delay: 1s;
     animation-duration: 1s;
 	animation-timing-function: ease-in;
-	animation-fill-mode: forwards;*/
+	animation-fill-mode: forwards;
 }
 @keyframes fadein {
 	0% {opacity: 1;}
@@ -182,7 +182,7 @@ body {
 	70% {opacity: 1;}
 	80% {opacity: 1;}
 	90% {opacity: .5;}
-	100% {opacity: 1;}
+	100% {opacity: 1;}*/
 }
 
 .headline {
@@ -197,8 +197,8 @@ body {
 	font-size: .9em;
 	position: relative;
 	animation-name: drift;
-	animation-delay: 1s;
-    animation-duration: 200s;
+	animation-delay: 2s;
+    animation-duration: 300s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
@@ -231,26 +231,33 @@ body {
 }
 
 
+.main {
+	/*border: solid red 2px;*/
+}
+
 .jeff {
-	float: left;
+	display: inline-block;
 	width: 20%;
 	margin-left: 80px;
 }
 .jeff img {
 	width: 100%;
-	border-radius: 200px;
+	border-radius: 500px;
 }
 
 
 
 .about {
-	float: left;
+	display: inline-block;
 	width: 700px;
 	max-width: 60%;
 	font-size: 1em;
 	margin-left: 30px;
 	border-left: solid white 4px;
 	padding: 10px 5px 10px 5px;
+	/*position: relative;*/
+	/*top: 50%;*/
+	/*transform: translateY(-50%);*/
 }
 .about a {
 	color: white;
@@ -269,7 +276,7 @@ body {
 	clear: both;
 	width: 98%;
 	margin: 0px auto 0 auto;
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 150px;
 	text-align: center;
 }
@@ -574,7 +581,7 @@ body {
 
 }
 .email div {
-		position: relative;
+	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -602,8 +609,8 @@ body {
 .bg {
 	position: fixed; 
 	top: 0; 
-	left: 0; 
-	width: 100%; 
+	left: -30%; 
+	width: 160%; 
 	height: 100%;
 	z-index: -1;
 
@@ -652,8 +659,8 @@ body {
 	font-size: .9em;
 	position: relative;
 	animation-name: drift;
-	animation-delay: 1s;
-    animation-duration: 150s;
+	animation-delay: 2s;
+    animation-duration: 250s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
@@ -693,7 +700,7 @@ body {
 }
 .jeff img {
 	width: 100%;
-	border-radius: 200px;
+	border-radius: 500px;
 }
 
 
