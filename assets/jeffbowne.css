@@ -34,6 +34,8 @@ body {
 	background-color: black;
 	border-top: solid white 3px;
 	border-bottom: solid white 3px;
+	-webkit-transition-duration: 100ms;
+	-o-transition-duration: 100ms;
 	transition-duration: 100ms;
 }
 .yline {
@@ -65,14 +67,20 @@ body {
 .title a {
 	font-size: 11px;
 	color: white;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
 .title a:hover {
+	-webkit-transition-duration: 0ms;
+	-o-transition-duration: 0ms;
 	transition-duration: 0ms;
 }
 .title a:focus {
 	outline: none;
-	transition-duration: 0ms; 
+	-webkit-transition-duration: 0ms;
+	-o-transition-duration: 0ms;
+	transition-duration: 0ms;
 }
 .activetitle {
 	text-shadow:
@@ -88,6 +96,8 @@ body {
 	text-align: center;
 	float: left;
 	width: 120px; 
+	-webkit-transition-duration: 3000ms;
+	-o-transition-duration: 3000ms;
 	transition-duration: 3000ms;
 }
 .nav a {
@@ -95,16 +105,22 @@ body {
 	/*padding-bottom: 11px;*/
 	display: inline-block;
 	text-decoration: none;
+	-webkit-transition-duration: 3000ms;
+	-o-transition-duration: 3000ms;
 	transition-duration: 3000ms;
 }
 
 .nav a:hover {
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
 
 .nav a:focus {
 	outline: none;
-	transition-duration: 100ms; 
+	-webkit-transition-duration: 100ms;
+	-o-transition-duration: 100ms;
+	transition-duration: 100ms;
 }
 
 .white {
@@ -129,18 +145,26 @@ body {
 
 .activeres {
 	background-color: #E2B000;padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
 .activeart {
 	background-color: #FB5C43;padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
 .activedes {
 	background-color: #75B391;padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
 .activecon {
 	background-color: #9E8DA7;padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
 
@@ -244,6 +268,8 @@ body {
 }
 .nhov {
 	text-shadow: 0 0 15px #1FF, 0 0 20px #FFF, 0 0 25px #FFF, 0 0 30px #FFF;
+	-webkit-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
 	transition-duration: 200ms;
 }
 
@@ -258,6 +284,8 @@ body {
 	min-width: 200px;
 	margin-left: 40px;
 	vertical-align: middle;
+	-webkit-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
 	transition-duration: 200ms;
 }
 .jeff img {
@@ -309,9 +337,13 @@ body {
 }
 .iconlinks a {
 	color: white;
+	-webkit-transition-duration: 600ms;
+	-o-transition-duration: 600ms;
 	transition-duration: 600ms;
 }
 .iconlinks a:hover {
+	-webkit-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
 	transition-duration: 200ms;
 	color: #000;
 	text-shadow:
@@ -323,6 +355,8 @@ body {
 }
 
 .iconlinks a:focus {
+	-webkit-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
 	transition-duration: 200ms;
 	outline: none;
 		color: #000;
@@ -401,6 +435,8 @@ body {
 	margin-top: 150px;
 }
 .fa-code {
+	-webkit-transition-duration: 600ms;
+	-o-transition-duration: 600ms;
 	transition-duration: 600ms;
 }
 
@@ -606,20 +642,34 @@ body {
 	max-width: 900px;
 	height: 200px;
 	margin: 0 auto;
+	-webkit-transition-duration: 800ms;
+	-o-transition-duration: 800ms;
 	transition-duration: 800ms;
 	transition-timing-function: ease;
 }
 .email span {
 	font-family: 'Helvetica', sans-serif;
-	letter-spacing: 0px;
+	/*letter-spacing: 0px;*/
 
 }
-.email div {
+.email a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	-webkit-transition-duration: 800ms;
+	-o-transition-duration: 800ms;
+	transition-duration: 800ms;
 }
-
+.email a:hover {
+	text-decoration: underline;
+}
+.email a:focus {
+	outline: none;
+	text-decoration: underline;
+}
 
 
 
@@ -663,7 +713,7 @@ body {
 
 .content {
 	width: 95%;
-	margin: -10px auto;
+	margin: 10px auto -10px auto;
 	border-left: solid black 1px;
 	opacity: 1;
 /*	animation-name: fadein;
@@ -728,16 +778,27 @@ body {
 }
 
 
+
+
 .jeff {
+	font-size: 0px;
 	width: 80%;
 	max-width: 400px;
 	margin: 0 auto;
+	-webkit-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
+	transition-duration: 200ms;
 }
 .jeff img {
 	width: 100%;
 	border-radius: 500px;
 }
-
+.rotated {
+	transform: rotate(270deg);
+}
+.rotated2 {
+	transform: rotate(1440deg);
+}
 
 
 .about {
@@ -770,6 +831,8 @@ body {
 .iconlinks a {
 	font-size: 3vw;
 	color: white;
+	-webkit-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
 	transition-duration: 200ms;
 }
 .iconlinks a:hover {
@@ -855,6 +918,13 @@ body {
 	border-top: solid white 4px;
 	margin-left: 0;
 }
+
+.fa-code {
+	-webkit-transition-duration: 600ms;
+	-o-transition-duration: 600ms;
+	transition-duration: 600ms;
+}
+
 
 .resume {
 	width: 100%;
@@ -1055,17 +1125,38 @@ body {
 	width: 90%;
 	height: 200px;
 	margin: 0 auto;
+	-webkit-transition-duration: 800ms;
+	-o-transition-duration: 800ms;
+	transition-duration: 800ms;
+	transition-timing-function: ease;
 }
 .email span {
 	font-family: 'Helvetica', sans-serif;
-	letter-spacing: 0px;
+	/*letter-spacing: 0px;*/
 
 }
-.email div {
-		position: relative;
+.email a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	-webkit-transition-duration: 800ms;
+	-o-transition-duration: 800ms;
+	transition-duration: 800ms;
 }
+.email a:hover {
+	text-decoration: underline;
+}
+.email a:focus {
+	outline: none;
+	text-decoration: underline;
+}
+
+
+
+
 
 
 
@@ -1083,30 +1174,180 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 10px;
+	height: 24px;
 	background-color: black;
-	/*border-top: solid white 3px;*/
+	border-top: solid white 3px;
 	border-bottom: solid white 3px;
-	/*transition-duration: 100ms;*/
+	-webkit-transition-duration: 100ms;
+	-o-transition-duration: 100ms;
+	transition-duration: 100ms;
+	text-align: center;
 }
+/*
 .yline {
 	box-shadow: 0 0 0 4px #E2B000;
-	/*transition-duration: 100ms;*/
+	transition-duration: 100ms;
 }
 .rline {
 	box-shadow: 0 0 0 4px #FB5C43;
-	/*transition-duration: 100ms;*/
+	transition-duration: 100ms;
 }
 .gline {
 	box-shadow: 0 0 0 4px #75B391;
-	/*transition-duration: 100ms;*/
+	transition-duration: 100ms;
 }
 .pline {
 	box-shadow: 0 0 0 4px #9E8DA7;
-	/*transition-duration: 100ms;*/
+	transition-duration: 100ms;
+}
+*/
+
+.title { display: none;
+	float: left;
+	height: 27px;
+	margin-top: -3px;
+	margin-left: 15px;
+	margin-right: 15px;
+	/*transition-duration: 900ms;*/
+}
+.title a {
+	font-size: 11px;
+	color: white;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+.title a:hover {
+	-webkit-transition-duration: 0ms;
+	-o-transition-duration: 0ms;
+	transition-duration: 0ms;
+}
+.title a:focus {
+	outline: none;
+	-webkit-transition-duration: 0ms;
+	-o-transition-duration: 0ms;
+	transition-duration: 0ms;
+}
+.activetitle {
+	text-shadow:
+     -2px -2px 15px #FFF,  
+      2px -2px 15px #FFF,
+      -2px 2px 15px #FFF,
+       2px 2px 15px #FFF;
 }
 
-#topbar div {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+	font-size: 14px;
+	letter-spacing: -1px;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	width: 25%; 
+	-webkit-transition-duration: 3000ms;
+	-o-transition-duration: 3000ms;
+	transition-duration: 3000ms;
+}
+.nav a {
+	padding-top: 11px;
+	/*padding-bottom: 11px;*/
+	display: inline-block;
+	text-decoration: none;
+	-webkit-transition-duration: 3000ms;
+	-o-transition-duration: 3000ms;
+	transition-duration: 3000ms;
+}
+
+.nav a:hover {
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+
+.nav a:focus {
+	outline: none;
+	-webkit-transition-duration: 100ms;
+	-o-transition-duration: 100ms;
+	transition-duration: 100ms;
+}
+
+.white {
+	color: white;
+}
+.hovres {
+	color: #E2B000;
+	text-shadow: 0 -2px 1px #000;
+}
+.hovart {
+	color: #FB5C43;
+	text-shadow: 0 -2px 1px #000;
+}
+.hovdes {
+	color: #75B391;
+	text-shadow: 0 -2px 1px #000;
+}
+.hovcon {
+	color: #9E8DA7;
+	text-shadow: 0 -2px 1px #000;
+}
+
+.activeres {
+	background-color: #E2B000;
+	padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+.activeart {
+	background-color: #FB5C43;
+	padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+.activedes {
+	background-color: #75B391;
+	padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+.activecon {
+	background-color: #9E8DA7;
+	padding-bottom: 11px;
+	-webkit-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
 
 
 

@@ -88,7 +88,7 @@ $(document).ready(function() {
     $(".fa-code").toggleClass("rotated2");
   });
   
-  $(".email").click(function(event) {
+  $(".email a").click(function(event) {
     $(".email").toggleClass("rotated2");
   });
 
