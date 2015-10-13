@@ -65,10 +65,14 @@ body {
 .title a {
 	font-size: 11px;
 	color: white;
-	transition-duration: 3000ms;
+	transition-duration: 300ms;
 }
 .title a:hover {
-	transition-duration: 300ms;
+	transition-duration: 0ms;
+}
+.title a:focus {
+	outline: none;
+	transition-duration: 0ms; 
 }
 .activetitle {
 	text-shadow:
@@ -96,6 +100,11 @@ body {
 
 .nav a:hover {
 	transition-duration: 300ms;
+}
+
+.nav a:focus {
+	outline: none;
+	transition-duration: 100ms; 
 }
 
 .white {
@@ -187,9 +196,9 @@ body {
 
 .headline {
 	display: inline-block;
-	margin: 100px 0 50px 0;
+	margin: 70px 0 50px 0;
 	border-top: solid white 4px;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 .intro {
 	width: 60px;
@@ -211,6 +220,7 @@ body {
 	font-size: 4em;
 	letter-spacing: 3px;
 	padding-left: 10px;
+
 /*	text-shadow:
 	 0px 0px 0 #000,
      -1px -1px 0 #000,  
@@ -220,7 +230,7 @@ body {
 */
 	animation-name: flash;
 	animation-delay: 1s;
-    animation-duration: 1s;
+    animation-duration: 2s;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
 }
@@ -229,22 +239,36 @@ body {
 	50% {text-shadow: 0 0 15px #FFF;}
 	100% {text-shadow: 0 0 0px #FFF;}
 }
-
+#nhov {
+	/*transition-duration: 600ms;*/
+}
+.nhov {
+	text-shadow: 0 0 15px #1FF, 0 0 20px #FFF, 0 0 25px #FFF, 0 0 30px #FFF;
+	transition-duration: 200ms;
+}
 
 .main {
 	/*border: solid red 2px;*/
 }
 
 .jeff {
+	font-size: 0px;
 	display: inline-block;
 	width: 25%;
 	min-width: 200px;
 	margin-left: 40px;
 	vertical-align: middle;
+	transition-duration: 200ms;
 }
 .jeff img {
 	width: 100%;
 	border-radius: 500px;
+}
+.rotated {
+	transform: rotate(270deg);
+}
+.rotated2 {
+	transform: rotate(1440deg);
 }
 
 
@@ -285,9 +309,10 @@ body {
 }
 .iconlinks a {
 	color: white;
-	transition-duration: 200ms;
+	transition-duration: 600ms;
 }
 .iconlinks a:hover {
+	transition-duration: 200ms;
 	color: #000;
 	text-shadow:
 	2px 2px 0 #FFF,
@@ -298,6 +323,7 @@ body {
 }
 
 .iconlinks a:focus {
+	transition-duration: 200ms;
 	outline: none;
 		color: #000;
 	text-shadow:
@@ -374,7 +400,9 @@ body {
 	margin-left: 0;
 	margin-top: 150px;
 }
-
+.fa-code {
+	transition-duration: 600ms;
+}
 
 
 
@@ -578,6 +606,8 @@ body {
 	max-width: 900px;
 	height: 200px;
 	margin: 0 auto;
+	transition-duration: 800ms;
+	transition-timing-function: ease;
 }
 .email span {
 	font-family: 'Helvetica', sans-serif;

@@ -32,6 +32,68 @@ $(document).ready(function() {
   });
 
 
+  $(".jeff").hover(function() {
+    $("#nhov").addClass("nhov");
+  }, function() {
+    $("#nhov").removeClass("nhov");
+  });
+
+
+
+  $(".title a").focus(function() { 
+    $(".title a").addClass("activetitle");
+  });
+  $(".title a").focusout(function() {
+    $(".title a").removeClass("activetitle");
+  });
+
+
+
+  $("#gtresume a").focus(function() {
+    $("#gtresume a").addClass("hovres");
+  });
+  $("#gtresume a").focusout(function() {
+    $("#gtresume a").removeClass("hovres");
+  });
+
+  $("#gtartwork a").focus(function() {
+    $("#gtartwork a").addClass("hovart");
+  });
+  $("#gtartwork a").focusout(function() {
+    $("#gtartwork a").removeClass("hovart");
+  });
+
+  $("#gtdesign a").focus(function() {
+    $("#gtdesign a").addClass("hovdes");
+  });
+  $("#gtdesign a").focusout(function() {
+    $("#gtdesign a").removeClass("hovdes"); 
+  });
+
+  $("#gtcontact a").focus(function() {
+    $("#gtcontact a").addClass("hovcon");
+  });
+  $("#gtcontact a").focusout(function() {
+    $("#gtcontact a").removeClass("hovcon");
+  });
+
+
+
+
+  $(".jeff").click(function(event) {
+    $(".jeff").toggleClass("rotated");
+  });
+  
+  $(".fa-code").click(function(event) {
+    $(".fa-code").toggleClass("rotated2");
+  });
+  
+  $(".email").click(function(event) {
+    $(".email").toggleClass("rotated2");
+  });
+
+
+
 
   $(".title a").click(function(event) {
     event.preventDefault();
