@@ -102,22 +102,22 @@ $(document).ready(function() {
 
   $("#gtresume a").click(function(event) {
     event.preventDefault();
-    $("html,body").animate({scrollTop: $("#resume").offset().top}, 'slow');
+    $("html,body").animate({scrollTop: $(".resumeC").offset().top-100}, 'slow');
   });
 
   $("#gtartwork a").click(function(event) {
     event.preventDefault();
-    $("html,body").animate({scrollTop: $("#artwork").offset().top}, 'slow');
+    $("html,body").animate({scrollTop: $(".artworkC").offset().top-100}, 'slow');
   });
 
   $("#gtdesign a").click(function(event) {
     event.preventDefault();
-    $("html,body").animate({scrollTop: $("#design").offset().top}, 'slow');
+    $("html,body").animate({scrollTop: $(".designC").offset().top-100}, 'slow');
   });
 
   $("#gtcontact a").click(function(event) {
     event.preventDefault();
-    $("html,body").animate({scrollTop: $("#contact").offset().top}, 'slow');
+    $("html,body").animate({scrollTop: $(".contactC").offset().top-100}, 'slow');
   });
 
 
