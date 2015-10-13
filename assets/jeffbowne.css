@@ -168,7 +168,7 @@ body {
 .content {
 	width: 95%;
 	margin: -10px auto -35px auto;
-	border-left: solid white 1px;
+	border-left: solid black 1px;
 	opacity: 1;
 /*	animation-name: fadein;
 	animation-delay: 1s;
@@ -237,8 +237,10 @@ body {
 
 .jeff {
 	display: inline-block;
-	width: 20%;
-	margin-left: 80px;
+	width: 25%;
+	min-width: 200px;
+	margin-left: 40px;
+	vertical-align: middle;
 }
 .jeff img {
 	width: 100%;
@@ -250,14 +252,15 @@ body {
 .about {
 	display: inline-block;
 	width: 700px;
-	max-width: 60%;
+	max-width: 50%;
 	font-size: 1em;
-	margin-left: 30px;
+	margin-left: 40px;
 	border-left: solid white 4px;
-	padding: 10px 5px 10px 5px;
+	padding: 20px 0px 20px 5px;
 	/*position: relative;*/
 	/*top: 50%;*/
 	/*transform: translateY(-50%);*/
+	vertical-align: middle;
 }
 .about a {
 	color: white;
@@ -568,10 +571,11 @@ body {
 
 .email {
 	text-align: center;
-	font-size: 3.5vw;
-	letter-spacing: 13px;
+	font-size: 3vw;
+	letter-spacing: 10px;
 	background-color: rgba(11,11,11,.5);
-	width: 70vw;
+	width: 90%;
+	max-width: 900px;
 	height: 200px;
 	margin: 0 auto;
 }
@@ -696,6 +700,7 @@ body {
 
 .jeff {
 	width: 80%;
+	max-width: 400px;
 	margin: 0 auto;
 }
 .jeff img {
@@ -1014,8 +1019,8 @@ body {
 
 .email {
 	text-align: center;
-	font-size: 6vw;
-	letter-spacing: 3px;
+	font-size: 5vw;
+	letter-spacing: 5px;
 	background-color: rgba(11,11,11,.5);
 	width: 90%;
 	height: 200px;
