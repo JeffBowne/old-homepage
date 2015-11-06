@@ -261,31 +261,59 @@ $(document).ready(function() {
   //   }
   // });
 
+  
 
 
-  function positionHighlight(yourPos, element, highlight, augmentVal1, augmentVal2) {
+  // function positionHighlight(yourPos, element, highlight, augmentVal1, augmentVal2) {
+  //   $(window).scroll(function() { 
+  //     var sPos = $(window).scrollTop();
+  //     if ($(yourPos).position().top+augmentVal1 <= sPos && $(yourPos).position().top + $(yourPos).height()+augmentVal2 > sPos) {
+  //       $(element).addClass(highlight);
+  //     } else {
+  //       $(element).removeClass(highlight);
+  //     };
+  //   });
+  // };
+  // positionHighlight("#resume", "#gtresume", "activeres", 0, 114);
+  // positionHighlight("#artwork", "#gtartwork", "activeart", 0, 114);
+  // positionHighlight("#design", "#gtdesign", "activedes", 0, 114);
+  // positionHighlight("#contact", "#gtcontact", "activecon", 0, 114);
+
+  // positionHighlight("#resume", "#topbar", "yline", 248, 144);
+  // positionHighlight("#artwork", "#topbar", "rline", 248, 144);
+  // positionHighlight("#design", "#topbar", "gline", 248, 144);
+  // positionHighlight("#contact", "#topbar", "pline", 248, 144);
+
+
+
+  function positionHighlight(options) {
+
+    // var yourPos = options.yourPos;
+    // var element = options.element;
+    // var specialClass = options.specialClass;
+    // var xOffset = options.xOffset;
+    // var yOffset = options.yOffset;
+
     $(window).scroll(function() { 
       var sPos = $(window).scrollTop();
-      if ($(yourPos).position().top+augmentVal1 <= sPos && $(yourPos).position().top + $(yourPos).height()+augmentVal2 > sPos) {
-        $(element).addClass(highlight);
+      if ($(options.yourPos).position().top+options.xOffset <= sPos && $(options.yourPos).position().top + $(options.yourPos).height()+options.yOffset > sPos) {
+        $(options.element).addClass(options.specialClass);
       } else {
-        $(element).removeClass(highlight);
-      }
+        $(options.element).removeClass(options.specialClass);
+      };
     });
   };
-  positionHighlight("#resume", "#gtresume", "activeres", 0, 114);
-  positionHighlight("#artwork", "#gtartwork", "activeart", 0, 114);
-  positionHighlight("#design", "#gtdesign", "activedes", 0, 114);
-  positionHighlight("#contact", "#gtcontact", "activecon", 0, 114);
 
-  positionHighlight("#resume", "#topbar", "yline", 248, 144);
-  positionHighlight("#artwork", "#topbar", "rline", 248, 144);
-  positionHighlight("#design", "#topbar", "gline", 248, 144);
-  positionHighlight("#contact", "#topbar", "pline", 248, 144);
+  positionHighlight({ yourPos:"#resume", element:"#gtresume", specialClass:"activeres", xOffset:0, yOffset:114});
+  positionHighlight({ yourPos:"#artwork", element:"#gtartwork", specialClass:"activeart", xOffset:0, yOffset:114});
+  positionHighlight({ yourPos:"#design", element:"#gtdesign", specialClass:"activedes", xOffset:0, yOffset:114});
+  positionHighlight({ yourPos:"#contact", element:"#gtcontact", specialClass:"activecon", xOffset:0, yOffset:114});
 
-
-
-
+  positionHighlight({ yourPos:"#resume", element:"#topbar", specialClass:"yline", xOffset:248, yOffset:144});
+  positionHighlight({ yourPos:"#artwork", element:"#topbar", specialClass:"rline", xOffset:248, yOffset:144});
+  positionHighlight({ yourPos:"#design", element:"#topbar", specialClass:"gline", xOffset:248, yOffset:144});
+  positionHighlight({ yourPos:"#contact", element:"#topbar", specialClass:"pline", xOffset:248, yOffset:144});
+  
 
                 // $(".jeff").hover(function() {
                 //   $("#nhov").addClass("nhov");
