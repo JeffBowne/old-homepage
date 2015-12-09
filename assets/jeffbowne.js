@@ -322,16 +322,3 @@ $(document).ready(function() {
                 // });
 
 });
-
-
-
-
-
-
-
-// Thing to try out 
-    // $('.name').click(function() {
-    //     $('.name').addClass('zoom').on('webkitAnimationEnd', function () {
-    //     $('.name').removeClass('zoom');
-    //     });
-    // });
