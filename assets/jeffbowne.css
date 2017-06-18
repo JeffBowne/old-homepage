@@ -1585,9 +1585,14 @@ body {
     padding-left: 10px;
     color: white;
     text-shadow: 0 0 0px #E2B000;
+    transition-duration: 200ms;
 }
 .project:hover {
     text-shadow: 0 0 15px #E2B000, 0 0 5px #E2B000;
+    text-decoration: underline;
+    transition-property: text-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 .project:focus {
     text-shadow: 0 0 15px #E2B000, 0 0 5px #E2B000;
