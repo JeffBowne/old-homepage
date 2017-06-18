@@ -132,14 +132,14 @@ $(document).ready(function() {
   //   $(".email").toggleClass("rotated2");
   // });
 
-  function crazyRotate(element, roType) {
-    $(element).click(function(event) {
-      $(element).toggleClass(roType);
-    });
-  };
-  crazyRotate(".jeff", "rotated");
-  crazyRotate(".fa-code", "rotated2");
-  crazyRotate(".email a", "rotated2");
+  // function crazyRotate(element, roType) {
+  //   $(element).click(function(event) {
+  //     $(element).toggleClass(roType);
+  //   });
+  // };
+  // crazyRotate(".jeff", "rotated");
+  // crazyRotate(".fa-code", "rotated2");
+  // crazyRotate(".email a", "rotated2");
 
 
 
