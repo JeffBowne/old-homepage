@@ -41,7 +41,7 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
-/*  max-height: 100%;*/
+    min-height: 100%;
     width: 100%;
 }
 
@@ -160,7 +160,7 @@ body {
     padding-bottom: 10px;
     margin: 60px auto 0px auto;
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 .iconlinks a {
     font-size: 3vw;
@@ -1406,7 +1406,7 @@ body {
     width: 98%;
     margin: 0px auto 0 auto;
     padding-top: 40px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .iconlinks a {
@@ -1506,7 +1506,7 @@ body {
     width: 100%;
     border-top: solid white 4px;
     margin-left: 0;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
 }
 .fa-code {
     -webkit-transition-duration: 600ms;
